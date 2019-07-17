@@ -65,5 +65,5 @@ coupon = str(input())
 if coupon == 'Cash3000':
     print(price - int(coupon[-4:]))
 
-if coupon == 'Cash3000':
+if coupon == 'Cash5000':
     print(price - int(coupon[-4:]))
