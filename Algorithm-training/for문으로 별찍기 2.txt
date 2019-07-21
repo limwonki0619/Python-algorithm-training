@@ -43,7 +43,7 @@ python version = 3.7.3
 Height = 33
 
 P_1        blank_1                   star_1
-0          20개(i:20)                1개 (i:i+1)
+0          20개(i:20)                 1개 (i:i+1)
 
 
 P_2        blank_1                   star_1             blank_2             star_2               blank_3            star_3 
@@ -58,9 +58,9 @@ P_2        blank_1                   star_1             blank_2             star
 8          1
 
 
-P_3        star_1                    blank_1            star_2(별 개수 조정필요)     blank_2          start_3
-0          1개(i:i+1)                1개(0:i+1)          40개 (i:40-i)              1개(0:i)         1개(i:i+1)
-1          1개                       2개                 38개 (i:40-i)              2개(0:i)         1개 
+P_3        star_1                    blank_1            star_2(별 개수 조정필요)      blank_2          start_3
+0          1개(i:i+1)                1개(0:i+1)          40개 (i:40-i)               1개(0:i)         1개(i:i+1)
+1          1개                       2개                 38개 (i:40-i)               2개(0:i)         1개 
 2          1개                       3개                 36개 
 3         
 4                                   
