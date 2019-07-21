@@ -67,7 +67,7 @@ def star():
             print('*', end='')
         print()
 
-    print(' '*19, '*')  # Part 6 == Part_1
+    print(' '*19, '*')  # Part 6 == Part 1
 
 star()
 
