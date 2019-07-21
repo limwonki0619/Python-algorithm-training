@@ -5,7 +5,8 @@ def star():
     denominator = 4
 
     print(' '*19, '*')  # Part 1
-    for P_2 in range(Height // denominator):              # Part 2, i = 0~8
+    
+    for P_2 in range(Height // denominator):    # Part 2, i = 0~8
         for P_2_blank_1 in range(P_2, 17-P_2):  # i:17-i
             print(' ', end='')
         for P_2_star_1 in range(P_2, P_2+1):    #  i:i+1
@@ -27,7 +28,7 @@ def star():
             print('*', end='')
         for P_3_blank_2 in range(0, P_3+1):
             print(' ', end='')
-        for P_3_star_2 in range(P_3, 34-P_3):
+        for P_3_star_2 in range(P_3, 34-P_3): # 수정된 (첫번째)별 갯수 : 34
             print('*', end='')
         for P_3_blank_3 in range(0, P_3+1):
             print(' ', end='')
@@ -65,7 +66,7 @@ def star():
             print('*', end='')
         print()
 
-    print(' '*19, '*')  # Part 1
+    print(' '*19, '*')  # Part 6 == Part_1
 
 star()
 
