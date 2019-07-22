@@ -5,7 +5,6 @@
  > [2. 알고리즘 히어로즈](https://level.goorm.io/)의 알고리즘 예제  
  > [3. Baekjoon Online Judge](https://www.acmicpc.net/)의 알고리즘 예제  
  > [4. codility](https://app.codility.com/programmers/)의 알고리즘 예제
- <br>
  
 # Jupyter-Notebook 
  - 파이썬 코드를 확인하고자 `Jupyter Notebook`을 사용합니다
