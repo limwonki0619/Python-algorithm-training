@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="18bf6bde-b723-407b-b609-5c8a4e307453" name="Default Changelist" comment="" />
+    <list default="true" id="18bf6bde-b723-407b-b609-5c8a4e307453" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/파이썬 300제/02_파이썬 기본 자료구조/041-090.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/파이썬 300제/03_제어문/091-120.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/파이썬 300제/01_변수와 데이터 타입/001-040.py" beforeDir="false" afterPath="$PROJECT_DIR$/파이썬 300제/01_변수와 데이터 타입/001-040.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,7 +14,42 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/파이썬 300제/01_변수와 데이터 타입/001-040.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="313">
+              <caret line="144" lean-forward="true" selection-start-line="144" selection-end-line="144" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/파이썬 300제/02_파이썬 기본 자료구조/041-090.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="605">
+              <caret line="299" column="18" lean-forward="true" selection-start-line="299" selection-start-column="18" selection-end-line="299" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/파이썬 300제/03_제어문/091-120.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="169">
+              <caret line="147" column="22" lean-forward="true" selection-start-line="147" selection-start-column="22" selection-end-line="147" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -18,14 +58,16 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/TIL/DJ_Unit13_if.py" />
+        <option value="$PROJECT_DIR$/파이썬 300제/01_변수와 데이터 타입/001-040.py" />
+        <option value="$PROJECT_DIR$/파이썬 300제/02_파이썬 기본 자료구조/041-090.py" />
+        <option value="$PROJECT_DIR$/파이썬 300제/03_제어문/091-120.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
-    <option name="y" value="20" />
-    <option name="width" value="1750" />
-    <option name="height" value="980" />
+    <option name="x" value="-8" />
+    <option name="width" value="962" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -41,6 +83,29 @@
             <path>
               <item name="Python-algorithm-training" type="b2602c69:ProjectViewProjectNode" />
               <item name="Python-algorithm-training" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Python-algorithm-training" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Python-algorithm-training" type="462c0819:PsiDirectoryNode" />
+              <item name="파이썬 300제" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Python-algorithm-training" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Python-algorithm-training" type="462c0819:PsiDirectoryNode" />
+              <item name="파이썬 300제" type="462c0819:PsiDirectoryNode" />
+              <item name="01_변수와 데이터 타입" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Python-algorithm-training" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Python-algorithm-training" type="462c0819:PsiDirectoryNode" />
+              <item name="파이썬 300제" type="462c0819:PsiDirectoryNode" />
+              <item name="02_파이썬 기본 자료구조" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Python-algorithm-training" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Python-algorithm-training" type="462c0819:PsiDirectoryNode" />
+              <item name="파이썬 300제" type="462c0819:PsiDirectoryNode" />
+              <item name="03_제어문" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -78,9 +143,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="16" width="1400" height="784" extended-state="0" />
+    <frame x="-6" y="0" width="769" height="830" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24908425" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23705722" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -93,17 +159,39 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" visible="true" weight="0.3292683" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="10" visible="true" weight="0.30769232" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/TIL/DJ_Unit13_if.py">
+    <entry file="file://$PROJECT_DIR$/TIL/DJ_Unit13_if.py" />
+    <entry file="file://$PROJECT_DIR$/파이썬 300제/01_변수와 데이터 타입/001-040.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="68" column="35" selection-start-line="68" selection-start-column="35" selection-end-line="68" selection-end-column="35" />
+        <state relative-caret-position="313">
+          <caret line="144" lean-forward="true" selection-start-line="144" selection-end-line="144" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/임원기/임원기.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/파이썬 300제/03_제어문/091-120.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="147" column="22" lean-forward="true" selection-start-line="147" selection-start-column="22" selection-end-line="147" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/파이썬 300제/02_파이썬 기본 자료구조/041-090.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="605">
+          <caret line="299" column="18" lean-forward="true" selection-start-line="299" selection-start-column="18" selection-end-line="299" selection-end-column="18" />
         </state>
       </provider>
     </entry>

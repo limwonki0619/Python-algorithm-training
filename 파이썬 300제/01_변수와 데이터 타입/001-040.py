@@ -101,3 +101,50 @@ print(lang[0], lang[2])
 print(lang[0:3:2])
 
 
+# 022 : 자동차 번호가 다음과 같을 때 뒤에 4자리만 출력하라.
+license_plate = "24가 2210"
+print(license_plate[-4:])  # -4부터 끝까지
+
+# 023 : 아래 문자열에서 '홀'만 출력하라
+string = "홀짝홀짝홀짝"
+print(string[0::2])
+
+# 024 : 문자열을 거꾸로 뒤집어 출력하라
+string = "PYTHON"
+print(string[::-1])
+
+# 025 : 아래의 전화번호에서 하이푼("-")을 제거하고 출력하라.
+phone_number = "010-1111-2222"
+print(phone_number.replace("-", " "))
+
+# 026 : 위 번호를 모두 붙여 출력하라.
+print(phone_number.replace("-", ""))
+
+# 027 : url에 저장된 웹 페이지 주소에서 도메인을 출력하라.
+url = "http://sharebook.kr"
+print(url[-2:])
+print(url[len(url)-2:])
+
+# 028 : 아래 코드의 실행결과를 예상하라.
+lang = 'python'
+lang[0] = 'P'  # 기존에 생성된 문자열은 바꿀 수 없다.
+print(lang)
+
+# 029 : 어랴 문자열에서 소문자 'a'를 대문자'A'로 변경하라.
+string = 'abcdfe2a354a32a'
+string.replace("a", "A")
+
+# 030 : 아래 코드의 실행 결과를 예측하라.
+# 소문자 b가 대문자 B로 변경된다.
+string = 'abcd'
+string.replace('b', 'B')  # b가 B로 변경되는 값을 출력하지만, 원래 문자열은 바뀌지 않는다.
+print(string)
+
+# replace 메서드는 기존의 문자열을 변경하는 것이 아니라 변경된 문자열을 새롭게 생성해줍니다.
+# 따라서 replace 메서드가 전달해주는 값을 변수에 바인딩 후 사용해야 합니다.
+
+new_string = string.replace('b', 'B')
+
+
+# 031~040 : 문자열 format 관련 문제 추가 예정
+
