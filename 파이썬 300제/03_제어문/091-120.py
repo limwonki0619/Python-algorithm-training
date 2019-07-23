@@ -199,3 +199,79 @@ if money == '달러':
 
 # 114 : 사용자로부터 세 개의 숫자를 입력 받은 후 가장 큰 숫자를 출력하라.
 
+num1 = int(input('input number1: '))
+num2 = int(input('input number2: '))
+num3 = int(input('input number3: '))
+
+print(max(num1, num2, num3))
+
+
+# 115 : 휴대폰 번호 앞자리에 따라 통신사는 아래와 같이 구분된다.
+#       사용자로부터 휴대전화 번호를 입력 받고, 통신사를 출력하는 프로그램을 작성하라.
+
+phone = input('휴대전화 번호 입력: ')
+
+if phone[:3] == '011':
+    print('당신은 SKT 사용자 입니다.')
+
+tels = {'011': 'SKT', '016': 'KT', '019': 'LGU', '010': '알수없음'}
+
+if phone[:3] == list(tels.keys())[0]:
+    print('당신은 {0} 사용자 입니다.'.format(tels.get(list(tels.keys())[0])))
+elif phone[:3] == list(tels.keys())[1]:
+    print('당신은 {0} 사용자 입니다.'.format(tels.get(list(tels.keys())[1])))
+elif phone[:3] == list(tels.keys())[2]:
+    print('당신은 {0} 사용자 입니다.'.format(tels.get(list(tels.keys())[2])))
+else:
+    print('당신은 {0}는 사용자 입니다.'.format(tels.get(list(tels.keys())[3])))
+
+
+# 116 : 우편번호는 5자리로 구성되는데, 앞의 세자리는 구를 나타낸다.
+#       예를들어, 강북구의 경우 010, 011, 012 세 자리로 시작한다.
+
+reg = input('우편번호: ')
+
+if int(reg[2:3]) <= 2:
+    print('강북구')
+elif 3 <= int(reg[2:3]) <= 5:
+    print('도봉구')
+else:
+    print('노원구')
+
+
+# 117 : 주민등록번호 뒷 자리 7자리 중 첫째 자리는 성별을 나타내는데, 1, 3은 남자 2, 4는 여자를 의미한다.
+#       사용자로부터 13자리의 주민등록번호를 입력 받은 후 성별 (남자, 여자)를 출력하는 프로그램을 작성하라.
+
+iden = input('주민등록번호:')
+
+if int(iden[7:8]) == 1:
+    print('성별: 남자')
+else:
+    print('성별: 여자')
+
+# 118 : 주민등록번호의 뒷 자리 7자리 중 두번째와 세번째는 지역코드를 의미한다.
+#       주민 등록 번호를 입력 받은 후 출생지가 서울인지 아닌지 판단하는 코드를 작성하라
+
+iden = input('주민등록번호:')
+
+if '09' or '10' or '11' or '12' in int(iden[8:10]):
+    print('서울이 아닙니다.')
+else:
+    print('서울입니다.')
+
+
+# 119 : 주민등록번호는 13자리로 구성되는데 마지막 자리수는 주민등록번호의 유효성을 체크하는데 사용된다.
+#       먼저 앞에서부터 12자리의 숫자에 2, 3, 4, 5, 6, 7, 8, 9, 2, 3, 4, 5를 차례로 곱한 뒤
+#       그 값을 전부 더한다.
+#       연산 결과 값을 11로 나누면 나머지가 나오는데 11에서 나머지를 뺀 값이
+#       주민등록번호의 마지막 번호가 된다.
+
+v = list(''.join(iden.split('-'))[:-1])
+v
+
+mul_value = [2, 3, 4, 5, 6, 7, 8, 9, 2, 3, 4, 5]
+
+list(map(lambda x, y: x*y, v, mul_value))
+
+11 - sum(storage)%11
+
