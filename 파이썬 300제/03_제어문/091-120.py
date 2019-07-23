@@ -258,7 +258,7 @@ else :
 
 iden = input('주민등록번호:')
 
-if int(iden[7:8]) == 1:
+if int(iden[7:8]) == 1 or 3:
     print('성별: 남자')
 else:
     print('성별: 여자')
