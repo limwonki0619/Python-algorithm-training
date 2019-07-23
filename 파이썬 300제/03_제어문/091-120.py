@@ -152,29 +152,28 @@ else:
 #       포함되었다면 "정답입니다"를 아닐 경우 "오답입니다" 출력하라.
 
 user_fruit = input('좋아하는 과일은? ')
+def my_fru(user_fruit):
+    if user_fruit in fruit.values():
+        print('정답입니다.')
+    else:
+        print('오답입니다.')
 
-if user_fruit in fruit.values():
-    print('정답입니다.')
-else:
-    print('오답입니다.')
-
-<<<<<<< .merge_file_a10860
-=======
 
 # 111 : 사용자로부터 문자 한 개를 입력 받고,
 #       소문자일 경우 대문자로, 대문자 일 경우, 소문자로 변경해서 출력하라.
 
 user = input()
-if user.islower() == True:
-    print(user.upper())
-else:
-    print(user.lower())
+def my_islower(user):
+    if user.islower() == True:
+        print(user.upper())
+    else:
+        print(user.lower())
 
 
 # 112 : 점수 구간에 해당하는 학점이 아래와 같이 정의되어 있다.
 #       81~100 A, 61~80 B, 41~60 C, 21~40 D, 0~20 E
 score = int(input('score:'))
-83
+
 if score > 80:
     print('grade is A')
 elif score > 61:
@@ -193,10 +192,17 @@ else:
 #       사용자는 100 달러, 1000 엔, 13 유로, 100 위안과 같이
 #       금액과 통화명 사이에 공백을 넣어 입력한다고 가정한다.
 
-price, money = input('입력:').split()
+price, currency= input('입력:').split()
 
-if money == '달러':
-    print('{0:<10,.2f}'.format(int(price)*1167)+'원')  # {(인덱스):(정렬위치)(0개수)(천단위 콤마)(소수점 2자리 표시)}
+if currency == '달러':
+    ratio = 1167
+elif currency == '엔':
+    ratio = 1.096
+elif currency == '유로':
+    ratio = 1268
+else:
+    ratio = 171
+print('{0:<10,.2f}'.format(int(price)*ratio)+'원')  # {(인덱스):(정렬위치)(0개수)(천단위 콤마)(소수점 2자리 표시)}
 
 
 # 114 : 사용자로부터 세 개의 숫자를 입력 받은 후 가장 큰 숫자를 출력하라.
@@ -211,21 +217,17 @@ print(max(num1, num2, num3))
 # 115 : 휴대폰 번호 앞자리에 따라 통신사는 아래와 같이 구분된다.
 #       사용자로부터 휴대전화 번호를 입력 받고, 통신사를 출력하는 프로그램을 작성하라.
 
-phone = input('휴대전화 번호 입력: ')
 
-if phone[:3] == '011':
-    print('당신은 SKT 사용자 입니다.')
+pn = input ("휴대전화 번호 입력 : ")
 
-tels = {'011': 'SKT', '016': 'KT', '019': 'LGU', '010': '알수없음'}
-
-if phone[:3] == list(tels.keys())[0]:
-    print('당신은 {0} 사용자 입니다.'.format(tels.get(list(tels.keys())[0])))
-elif phone[:3] == list(tels.keys())[1]:
-    print('당신은 {0} 사용자 입니다.'.format(tels.get(list(tels.keys())[1])))
-elif phone[:3] == list(tels.keys())[2]:
-    print('당신은 {0} 사용자 입니다.'.format(tels.get(list(tels.keys())[2])))
-else:
-    print('당신은 {0}는 사용자 입니다.'.format(tels.get(list(tels.keys())[3])))
+if pn[0:3] == "011" :
+    print ("당신은 SKT 사용자입니다.")
+elif pn[0:3] == "016" :
+    print ("당신은 KT 사용자입니다.")
+elif pn[0:3] == "019" :
+    print ("당신은 LGT 사용자입니다.")
+else :
+    print("당신은 알수없는 사용자입니다.")
 
 
 # 116 : 우편번호는 5자리로 구성되는데, 앞의 세자리는 구를 나타낸다.
@@ -240,6 +242,16 @@ elif 3 <= int(reg[2:3]) <= 5:
 else:
     print('노원구')
 
+# 모범답안
+zipcode = input("우편번호:")
+
+if zipcode[2] in "012" :
+    print("강북구")
+elif zipcode[2] in "345" :
+    print("도봉구")
+else :
+    print("노원구")
+
 
 # 117 : 주민등록번호 뒷 자리 7자리 중 첫째 자리는 성별을 나타내는데, 1, 3은 남자 2, 4는 여자를 의미한다.
 #       사용자로부터 13자리의 주민등록번호를 입력 받은 후 성별 (남자, 여자)를 출력하는 프로그램을 작성하라.
@@ -251,30 +263,56 @@ if int(iden[7:8]) == 1:
 else:
     print('성별: 여자')
 
+# 모범답안
+reg_num = input("주민등록번호:")
+
+if reg_num[7] in ['1', '3'] :
+    print ("남자")
+else :
+    print ("여자")
+
 # 118 : 주민등록번호의 뒷 자리 7자리 중 두번째와 세번째는 지역코드를 의미한다.
 #       주민 등록 번호를 입력 받은 후 출생지가 서울인지 아닌지 판단하는 코드를 작성하라
 
 iden = input('주민등록번호:')
 
-if '09' or '10' or '11' or '12' in int(iden[8:10]):
-    print('서울이 아닙니다.')
-else:
+if int(iden[8:10]) <= 8:
     print('서울입니다.')
-
+else:
+    print('서울이 아닙니다.')
 
 # 119 : 주민등록번호는 13자리로 구성되는데 마지막 자리수는 주민등록번호의 유효성을 체크하는데 사용된다.
 #       먼저 앞에서부터 12자리의 숫자에 2, 3, 4, 5, 6, 7, 8, 9, 2, 3, 4, 5를 차례로 곱한 뒤
 #       그 값을 전부 더한다.
 #       연산 결과 값을 11로 나누면 나머지가 나오는데 11에서 나머지를 뺀 값이
-#       주민등록번호의 마지막 번호가 된다.
+#       주민등록번호의 마지막 번호가 되면 주민등록번호가 유효하다.
 
-v = list(''.join(iden.split('-'))[:-1])
-v
+def RRN(iden):
+    rrn_12 = list(iden.replace('-','')[:-1])
+    constant = [i % 10 for i in range(2, 16) if i < 10 or i > 11]
 
-mul_value = [2, 3, 4, 5, 6, 7, 8, 9, 2, 3, 4, 5]
+    value = []
+    for i in range(len(rrn_12)):
+        value.append(int(rrn_12[i]) * int(constant[i]))
 
-list(map(lambda x, y: x*y, v, mul_value))
+    total = sum(value)
 
-11 - sum(storage)%11
+    if 11 - (total % 11) == int(iden[-1]):
+        print('유효한 주민등록번호 입니다.')
+    else:
+        print('유효하지 않은 주민등록번호 입니다.')
 
->>>>>>> .merge_file_a09636
+
+# 아래 코드는 비트코인의 가격 정보를 딕셔너리로 가져오는 코드다.
+
+import requests
+btc = requests.get("https://api.bithumb.com/public/ticker/").json()['data']
+
+volatility = int(btc['max_price']) - int(btc['min_price'])
+if int(btc['max_price']) < int(btc['opening_price']) + volatility:
+    print('상승장')
+else:
+    print('하락장')
+
+
+
