@@ -158,3 +158,44 @@ if user_fruit in fruit.values():
 else:
     print('오답입니다.')
 
+
+# 111 : 사용자로부터 문자 한 개를 입력 받고,
+#       소문자일 경우 대문자로, 대문자 일 경우, 소문자로 변경해서 출력하라.
+
+user = input()
+if user.islower() == True:
+    print(user.upper())
+else:
+    print(user.lower())
+
+
+# 112 : 점수 구간에 해당하는 학점이 아래와 같이 정의되어 있다.
+#       81~100 A, 61~80 B, 41~60 C, 21~40 D, 0~20 E
+score = int(input('score:'))
+83
+if score > 80:
+    print('grade is A')
+elif score > 61:
+    print('grade is B')
+elif score > 41:
+    print('grade is C')
+elif score > 21:
+    print('grade is D')
+else:
+    print('grade is E')
+
+
+# 113 : 사용자로부터 달러, 엔, 유로, 또는 위안 금액을 입력받은 후
+#       이를 원으로 변환하는 프로그램을 작성하라.
+#       각 통화별 환율은 다음과 같다.
+#       사용자는 100 달러, 1000 엔, 13 유로, 100 위안과 같이
+#       금액과 통화명 사이에 공백을 넣어 입력한다고 가정한다.
+
+price, money = input('입력:').split()
+
+if money == '달러':
+    print('{0:<10,.2f}'.format(int(price)*1167)+'원')  # {(인덱스):(정렬위치)(0개수)(천단위 콤마)(소수점 2자리 표시)}
+
+
+# 114 : 사용자로부터 세 개의 숫자를 입력 받은 후 가장 큰 숫자를 출력하라.
+
