@@ -34,6 +34,7 @@
  > + 다만, 파이플롯으로 그래프를 그리면 바탕이 어두워 축의 숫자가 잘 안보일 수 있는데, 이럴 경우 <bR>
  > `fig = plt.figure()`와 `fig.patch.set_facecolor('xkcd:white')`를 입력해주면 흰색배경의 그림을 그릴 수 있습니다. 
  > + 출처는 [여기](https://woongheelee.com/entry/주피터-노트북-Jupyter-Notebook-테마-바꾸기-어둡게)입니다. 
+ > + [추가 : Github theme](https://gist.github.com/aahoo/e8ed425759711ead1ef7e7a3332dcd2d)  
  
  ### Jupyter Notebook을 Html로 변환하는 방법
  >  `jupyter nbconvert --to html filename.ipynb --output output_filename.html`  
