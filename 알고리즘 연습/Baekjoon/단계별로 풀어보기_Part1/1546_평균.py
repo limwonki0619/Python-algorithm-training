@@ -1,10 +1,10 @@
 n = int(input())
-score = input().split()
+score = list(map(int, input().split()))
+M = max(score)
 
-M = int(sorted(score)[-1])
-
-# new_avg = 0
+# new_score = 0
 # for i in score:
-#     new_score = int(i)/M * 100
-#
-# print('{:4.2f}'.format(new_avg/len(score)))
+#     new_score += (i/M * 100) / len(score)
+
+print('{:4.2f}'.format(sum([(i / M * 100) / len(score) for i in score])))
+
