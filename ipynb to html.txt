@@ -1,0 +1,5 @@
+d:
+
+cd limworkspace\Python-lecture\Python-Data-Science\Numpy        # 데이터 경로 
+
+jupyter nbconvert --to html sample.ipynb --output output.html
